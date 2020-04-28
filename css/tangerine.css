@@ -16,7 +16,7 @@ body {
     height: 50px;
 }
 
-.button {
+.button.special {
     display: inline-block;
     padding: 8px 30px;
     border-radius: 50px;
@@ -25,31 +25,65 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: none;
+}
+
+.button.special.white,
+.button.special:hover {
+    background-color: #ffffff;
+    color: #FD902B;
     -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
-.button.white,
-.button:hover {
-    background-color: #ffffff;
-    color: #FD902B;
-}
-
-.button.white:hover {
+.button.special.white:hover {
     background-color: #696969;
     color: #ffffff;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
-.button.dark,
-.button:hover {
+.button.special.dark,
+.button.special:hover {
     background-color: #696969;
     color: white;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
-.button.dark:hover {
+.button.special.dark:hover {
     background-color: #FD902B;
     color: white;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
 }
+
+.button.about {
+    display: inline-block;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #FD902B;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+}
+
+.button.about.dark,
+.button.about:hover {
+    background-color: #696969;
+    color: white;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.button.about.dark:hover {
+    background-color: #FD902B;
+    color: white;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Banner
 ==================================================*/
@@ -74,7 +108,7 @@ h6 {
     letter-spacing: 4px;
     padding-top: 10px;
     position: relative;
-    color: rgb(219, 114, 15), 114, 15);
+    color: rgb(219, 114, 15);
 }
 
 /* preloader
