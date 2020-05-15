@@ -35,7 +35,7 @@ body {
 }
 
 .button.special.white:hover {
-    background-color: #696969;
+    background-color: #FD902B;
     color: #ffffff;
     -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
