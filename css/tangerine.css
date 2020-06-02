@@ -1,29 +1,40 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
 
+/* Font
+==================================================*/
+
 body {
     font-family: 'product_sansregular', sans-serif, monospace;
     font-size: 14px;
     line-height: 24px;
 }
 
-.size-50 {
-    font-size: 50px;
-    line-height: 50px
-}
-
-.h-50 {
-    height: 50px;
-}
+/* Buttons
+==================================================*/
 
 .button.special {
     display: inline-block;
-    padding: 8px 30px;
+    padding: 0.5vw 1vw;
     border-radius: 50px;
     color: #ffffff;
     background-color: #FD902B;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: none;
+}
+
+@media screen and (max-width: 750px) {
+    .button.special {
+        display: inline-block;
+        padding: 3vw 3.5vw;
+        border-radius: 50px;
+        color: #ffffff;
+        background-color: #FD902B;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        border: none;
+        margin: 0.5vw;
+    }
 }
 
 .button.special.white,
@@ -83,23 +94,135 @@ body {
     box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
+/* Pages (About, Discord)
+==================================================*/
+
+.pages { 
+    width: 3vw;
+    height: 3vw;
+}
+
+@media screen and (max-width: 750px) {
+    .pages {
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+/* Center Logo
+==================================================*/
+
+.logo {
+    text-align: center;
+    margin-top: 4vw;
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        text-align: center;
+        margin-top: 11vw;
+    }
+}
+
+/* Center Logo Image
+==================================================*/
+
+.logoimg {
+    width: 60.8vw;
+    height: 16vw;
+}
+
+@media screen and (max-width: 750px) {
+    .logoimg {
+        width: 76vw;
+        height: 20vw;
+    }
+}
+
+/* Center Logo Tagline
+==================================================*/
+
+.logodesc {
+    text-align: center;
+    font-size: 3vw;
+    line-height: normal;
+    padding-bottom: 1vw;
+}
+
+@media screen and (max-width: 750px) {
+    .logodesc {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1vw;
+        text-align: center;
+        font-size: 5vw;
+        line-height: normal;
+    }
+}
+
+/* Link Buttons
+==================================================*/
+
+.buttons {
+    text-align: center;
+    font-size: 1vw;
+    line-height: 1vw;
+}
+
+@media screen and (max-width: 750px) {
+    .buttons {
+        text-align: center;
+        font-size: 3vw;
+        line-height: 2vw;
+    }
+}
+
+/* About Page Elements
+==================================================*/
+
+.tagline {
+    text-align: center;
+    font-size: 2vw;
+    line-height: normal;
+    padding-bottom: 1vw;
+}
+
+@media screen and (max-width: 750px) {
+    .tagline {
+        text-align: center;
+        font-size: 5vw;
+        line-height: normal;
+        padding-bottom: 1vw;
+    }
+}
+
+.thanks {
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: normal;
+    padding-bottom: 1vw;
+}
+
+@media screen and (max-width: 750px) {
+    .thanks {
+        text-align: center;
+        font-size: 3vw;
+        line-height: normal;
+        padding-bottom: 1vw;
+    }
+}
+
 
 /* Banner
 ==================================================*/
 
 #banner {
     /*background: #fae2e2;*/
-    background-image: linear-gradient(#FEBC80, rgb(255, 234, 214));
+    background-image: linear-gradient(rgba(254, 189, 128, 0), rgba(255, 234, 214, 0));
     background-size: contain;
     height: 35px;
 }
 
-#banner1 {
-    /*background: #fae2e2;*/
-    background-image: linear-gradient(rgb(255, 234, 214), #FEBC80);
-    background-size: contain;
-    height: 35px;
-}
 
 h6 {
     /*Exclusive to banner */
@@ -255,4 +378,3 @@ h6 {
         opacity: 1
     }
 }
-
