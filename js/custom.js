@@ -59,8 +59,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     // Parallax
     var parallax = function () {
         $(window).stellar();
@@ -68,13 +66,6 @@ $(document).ready(function () {
 
     $(function () {
         parallax();
-    });
-
-    // AOS
-    AOS.init({
-        duration: 1200,
-        once: true,
-        disable: 'mobile'
     });
 
     //  isotope

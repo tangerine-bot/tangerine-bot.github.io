@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +26,7 @@
     <link rel="stylesheet" href="userfiles/ps/ps.css" type="text/css" charset="utf-8" />
     <link href="/css/preloader/tangerine-preloader.css" rel="stylesheet">
     <link href="css/tangerine.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body background="img/tangerine/tangerinewallpaper.png">
@@ -49,7 +51,7 @@
             <img class="logoimg" src="img/tangerine/tangerine_banner_cut.png">
         </p>
     </div>
-    
+
     <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="2000">
         <p class="logodesc">
             <font color="white">a multipurpose moderation and utility bot</font>
@@ -102,10 +104,19 @@
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/aosinit.js"></script>
+        <!-- <script src="js/aos.js"></script>
+        <script src="js/aosinit.js"></script> -->
         <!--  main  -->
         <script src="js/custom.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                startEvent: 'load',
+                enable: 'mobile'
+            });
+        </script>
+
     </div>
 </body>
 
