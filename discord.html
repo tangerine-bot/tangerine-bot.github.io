@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- METADATA -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,54 +12,48 @@
     <meta name="theme-color" content="#FD902B">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/tangerine-bot/tangerine/master/tangerine_transparent.png" />
-    <link rel="icon" href="img/tangerine/tangerine.ico" type="image/x-icon" />
+    <link rel="icon" href="img/tangerine.ico" type="image/x-icon" />
     <title>Tangerine</title>
     <!-- FAVICONS-->
-    <link rel="shortcut icon" href="img/tangerine/tangerine.ico" type="image/x-icon">
-    <link rel="icon" href="img/tangerine/tangerine.ico" type="image/x-icon">
-    <!--For masked forwarding-->
-    <link rel="icon" sizes="16x16 32x32 64x64" href="img/tangerine/tangerine.ico">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/tangerine.ico" type="image/x-icon">
+    <link rel="icon" href="img/tangerine.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="img/tangerine.ico">
+    <!-- CSS -->
     <link rel="stylesheet" href="userfiles/ps/ps.css" type="text/css" charset="utf-8" />
-    <link href="/css/preloader/tangerine-preloader.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/tangerine-preloader.css" rel="stylesheet">
     <link href="css/tangerine.css" rel="stylesheet">
 </head>
 
-<body background="img/tangerine/tangerinewallpaper.png">
+
+<body background="img/tangerinewallpaper.png">
     <div id="preloader">
         <div id="status">
             <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
             </div>
         </div>
     </div>
-
     <div data-aos="fade-down" data-aos-delay="800" data-aos-duration="2000">
         <div display: inline-block;>
             <p style="z-index: 10; margin-top: 1%; margin-left: 1%">
-                <a href="about" class="button"><img class="pages" src="img/tangerine/tangerine.png"></a>    
-                <a href="discord" class="button"><img class="pages" src="img/tangerine/discord.png"></a>
+                <a href="about" class="button"><img class="pages" src="img/tangerine.png"></a>    
+                <a href="discord" class="button"><img class="pages" src="img/discord.png"></a>
             </p>
         </div>
     </div>
-
     <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
         <p style="text-align: center; font-size: 50px; margin-top: -20px;">
-            <img src="img/tangerine/tangerine_banner_cut.png" width=50% height=50%>
+            <img src="img/tangerine_banner_cut.png" width=50% height=50%>
         </p>
     </div>
-
     <div data-aos="fade-up" data-aos-delay="1200" data-aos-duration="2000">
         <p style="text-align: center; font-size: 225%; line-height: normal;">
             <iframe src="https://discordapp.com/widget?id=702264118408773772&theme=dark" width="350" height="500"
-            allowtransparency="true" frameborder="0" width="50%"></iframe>
+                allowtransparency="true" frameborder="0" width="50%"></iframe>
         </p>
     </div>
-
-
     <div data-aos="fade-in" data-aos-delay="1600" data-aos-duration="2000">
         <p style="text-align: center; font-size: 120%; line-height: 120%;">
             <a href="https://discord.gg/uwcgjYw" class="button special dark">Support Server</a>    
@@ -67,19 +63,25 @@
     <!-- banner -->
     <div style="position: fixed; bottom: 0; width: 100%;" class="section" id="banner">
         <h6 style="text-align:center;">
-            <font color="black">Made by <a href="https://dashaputra.com"><font color="black">arnav74#0884</font></a> and EpicN#0001, 2020</font>
+            <font color="black">Made by <a href="https://dashaputra.com">
+                    <font color="black"><u>arnav74#0884</u></font>
+                </a> and EpicN#0001, 2020</font>
         </h6>
     </div>
     <!-- ./banner -->
-    <!-- js -->
     <div id=js>
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/aosinit.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
         <!--  main  -->
         <script src="js/custom.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                startEvent: 'load',
+                enable: 'mobile'
+            });
+        </script>
     </div>
 </body>
 
